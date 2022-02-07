@@ -1,0 +1,63 @@
+@use "./scss/base/reset" as*;
+@use "./scss/base/typography" as*;
+@use "./scss/base/variables" as*;
+@use "./scss/base/mixins/mixins" as* ;
+
+body{
+  background-color: $backgroundColor;
+} 
+
+
+.hero {
+  display: grid;
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(to right, #7474BF, #348AC7);
+  
+}
+
+.hero__header {
+  color: $headerColor;
+  font-family: $base-font;
+  font-weight:200;
+
+}
+
+.hero__name {
+  color: $primaryColor;
+  font-family: $base-font;
+  font-weight:200;
+
+}
+
+.hero__btn {
+    color: $primaryColor;
+    width: 100px;
+    height: 50px;
+    align-self:left;
+
+  .hero__btn--active:hover {
+    color: $headerColor;
+    font-weight:400;
+  }
+}
+
+.stack__header {
+  font-family: $base-font;
+  font-weight:200;
+  color: $textColor;
+  align-self: center;
+}
+
+.grid-stack {
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-areas: 
+  "one two three four"
+  "five six seven eight";
+  grid-gap: 25px;
+  align-content:center;
+
+
+
+}

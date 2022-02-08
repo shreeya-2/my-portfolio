@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Euphoria+Script&family=Inter:wght@100&family=Poppins:wght@100;200;300;400;600&display=swap");
 * {
   margin: 0;
-  padding: 20;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -15,51 +15,200 @@ button {
   cursor: pointer;
 }
 
+.btn {
+  border-radius: 14px;
+  border-style: hidden;
+}
+
+.hr {
+  border-style: solid;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 body {
   background-color: #101423;
 }
 
-.hero {
-  display: grid;
+.container {
+  width: 92%;
+  margin: 1rem;
+  margin-left: 1.2rem;
+  margin-right: -1.2rem;
+}
+
+.hero__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 500px;
+  height: 8vh;
+  overflow: scroll;
+  background-image: linear-gradient(to right, #7474BF, #348AC7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+.hero__logo {
+  height: 25px;
+}
+
+.hero__menu {
+  height: 30px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  min-width: max-content;
+  height: 820px;
   background-image: linear-gradient(to right, #7474BF, #348AC7);
 }
 
 .hero__header {
   color: #D7F9FF;
-  font-family: Arial;
-  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
 }
 
 .hero__name {
   color: #81D8F7;
-  font-family: Arial;
-  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.annotation {
+  font-family: "Euphoria Script", cursive;
+  font-size: medium;
+  color: #D7F9FF;
+  opacity: 70%;
+}
+
+.top {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.bottom {
+  margin-bottom: 3rem;
 }
 
 .hero__btn {
-  color: #81D8F7;
-  width: 100px;
-  height: 50px;
-  align-self: left;
+  background-color: #81D8F7;
+  color: #4185C5;
+  border-radius: 14px;
+  border-style: hidden;
+  width: 120px;
+  height: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  float: right;
 }
-.hero__btn .hero__btn--active:hover {
-  color: #D7F9FF;
+.hero__btn:hover {
+  background-color: #D7F9FF;
   font-weight: 400;
 }
 
-.stack__header {
-  font-family: Arial;
-  font-weight: 200;
+.projects__header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   color: white;
-  align-self: center;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-gap: 1rem;
+}
+
+.card {
+  height: 170px;
+  width: 330px;
+  display: flex;
+  flex-grow: inherit;
+  background-color: #3E3D45;
+  border-radius: 6px;
+}
+
+.stack__header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #9C92E7;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.section__line-1 {
+  border-color: #9C92E7;
+  border-style: solid;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .grid-stack {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "one two three four" "five six seven eight";
-  grid-gap: 25px;
-  align-content: center;
+  grid-gap: 12px;
+  justify-self: center;
+  margin-top: 1rem;
+}
+.grid-stack .one, .grid-stack .two, .grid-stack .three, .grid-stack .four, .grid-stack .five, .grid-stack .six, .grid-stack .seven, .grid-stack .eight {
+  height: 40px;
+  width: 40px;
+  justify-self: center;
+}
+.grid-stack .three {
+  border-radius: 6px;
+}
+
+.about__header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #81D8F7;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.section__line-2 {
+  border-color: #81D8F7;
+  border-style: solid;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.about__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: white;
+  padding: 1rem;
+}
+
+.contact__header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #9C92E7;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.section__line-3 {
+  border-color: #9C92E7;
+  border-style: solid;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.contact__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: white;
+  padding: 1rem;
 }

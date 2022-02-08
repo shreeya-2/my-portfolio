@@ -7,46 +7,125 @@ body{
   background-color: $backgroundColor;
 } 
 
+.container {
+  @include center-element(92%);
+  margin-left: 1.2rem;
+  margin-right: -1.2rem;
+}
+
+.hero__nav {
+  position:fixed;
+  top: 0;
+  left:0;
+  width:100%;
+  height:8vh;
+  overflow:scroll;
+  background-image: linear-gradient(to right, #7474BF, #348AC7);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1.2rem;
+}
+
+.hero__logo {
+  height: 25px;
+}
+
+.hero__menu {
+  height: 30px;
+}
 
 .hero {
-  display: grid;
-  width: 100%;
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width:100%;
+  min-width:max-content;
+  height: 820px;
   background-image: linear-gradient(to right, #7474BF, #348AC7);
-  
 }
 
 .hero__header {
   color: $headerColor;
   font-family: $base-font;
-  font-weight:200;
-
+  font-weight:300;
+  font-size: 2rem;
 }
 
 .hero__name {
   color: $primaryColor;
   font-family: $base-font;
-  font-weight:200;
+  font-weight:300;
+  font-size:2rem;
+}
 
+.annotation {
+  font-family: $code-font;
+  font-size:medium;
+  color: $headerColor;
+  opacity: 70%;
+}
+
+.top {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.bottom {
+    margin-bottom: 3rem;
 }
 
 .hero__btn {
-    color: $primaryColor;
-    width: 100px;
-    height: 50px;
-    align-self:left;
+    background-color: $primaryColor;
+    color: #4185C5;
+    border-radius: 14px;
+    border-style: hidden;
+    width: 120px;
+    height: 30px;
+    font-family: $base-font;
+    font-weight: 300;
+    float:right;
 
-  .hero__btn--active:hover {
-    color: $headerColor;
+  &:hover {
+    background-color:$headerColor;
     font-weight:400;
   }
 }
 
+.projects__header {
+  font-family: $base-font;
+  font-weight:400;
+  color: $textColor;
+}
+
+.project-container {
+  display:grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-gap: 1rem;
+}
+.card {
+  height:170px;
+  width:330px;
+  display:flex;
+  flex-grow:inherit;
+  background-color:$cardColor;
+  border-radius:6px;
+}
+
 .stack__header {
   font-family: $base-font;
-  font-weight:200;
-  color: $textColor;
-  align-self: center;
+  font-weight:400;
+  color: $accentColor2;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.section__line-1 {
+  border-color: $accentColor2;
+  border-style:solid;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .grid-stack {
@@ -55,9 +134,61 @@ body{
   grid-template-areas: 
   "one two three four"
   "five six seven eight";
-  grid-gap: 25px;
-  align-content:center;
+  grid-gap: 12px;
+  justify-self:center;
+  margin-top: 1rem;
 
+.one, .two, .three, .four, .five, .six, .seven, .eight {
+  height:40px;
+  width:40px;
+  justify-self:center;
+}
 
+.three {
+  border-radius: 6px;
+}
+}
 
+.about__header {
+  font-family: $base-font;
+  font-weight:400;
+  color: $primaryColor;
+  margin-top: 1.5rem;
+  margin-left:1rem;
+}
+
+.section__line-2 {
+  border-color: $primaryColor;
+  border-style:solid;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.about__text {
+  font-family: $base-font;
+  font-weight: 200;
+  color: $textColor;
+  padding: 1rem;
+}
+
+.contact__header {
+  font-family: $base-font;
+  font-weight:400;
+  color: $accentColor2;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.section__line-3 {
+  border-color: $accentColor2;
+  border-style:solid;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.contact__text {
+  font-family: $base-font;
+  font-weight: 200;
+  color: $textColor;
+  padding:1rem;
 }

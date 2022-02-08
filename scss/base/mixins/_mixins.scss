@@ -1,4 +1,4 @@
-@mixin center-element {
+@mixin center-element($width) {
   width: $width;
-  margin-inline: auto;
+  margin: 1rem;
 }

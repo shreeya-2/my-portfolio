@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Euphoria+Script&family=Inter:wght@100&family=Poppins:wght@100;200;300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Euphoria+Script&family=Inter:wght@100&family=La+Belle+Aurore&family=Poppins:wght@100;200;300;400;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -55,10 +55,11 @@ body {
   height: 25px;
 }
 
-.hero__menu {
-  height: 30px;
+@media screen and (max-width: 450px) and (orientation: portrait) {
+  .hero__phone-menu {
+    height: 30px;
+  }
 }
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -84,7 +85,7 @@ body {
 }
 
 .annotation {
-  font-family: "Euphoria Script", cursive;
+  font-family: "La Belle Aurore", cursive;
   font-size: medium;
   color: #D7F9FF;
   opacity: 70%;
@@ -131,8 +132,6 @@ body {
 .card {
   height: 170px;
   width: 330px;
-  display: flex;
-  flex-grow: inherit;
   background-color: #3E3D45;
   border-radius: 6px;
 }
@@ -142,7 +141,8 @@ body {
   font-weight: 400;
   color: #9C92E7;
   margin-top: 1.5rem;
-  margin-left: 1rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .section__line-1 {
@@ -174,7 +174,9 @@ body {
   font-weight: 400;
   color: #81D8F7;
   margin-top: 1.5rem;
-  margin-left: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+  text-indent: 1rem;
 }
 
 .section__line-2 {
@@ -184,11 +186,24 @@ body {
   margin-right: 1rem;
 }
 
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.about__image {
+  height: 20vh;
+  width: 18vh;
+  padding: 0.5rem;
+  grid-area: 1/1/2/2;
+}
+
 .about__text {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   color: white;
   padding: 1rem;
+  grid-area: 1/2/6/6;
 }
 
 .contact__header {
@@ -196,7 +211,9 @@ body {
   font-weight: 400;
   color: #9C92E7;
   margin-top: 1.5rem;
-  margin-left: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  margin-right: 1rem;
 }
 
 .section__line-3 {

@@ -31,9 +31,12 @@ body{
   height: 25px;
 }
 
-.hero__menu {
+@media screen and (max-width: 450px) and (orientation: portrait) {
+.hero__phone-menu {
   height: 30px;
 }
+}
+
 
 .hero {
   display: flex;
@@ -104,11 +107,10 @@ body{
   justify-items: center;
   grid-gap: 1rem;
 }
+
 .card {
   height:170px;
   width:330px;
-  display:flex;
-  flex-grow:inherit;
   background-color:$cardColor;
   border-radius:6px;
 }
@@ -118,7 +120,8 @@ body{
   font-weight:400;
   color: $accentColor2;
   margin-top: 1.5rem;
-  margin-left: 1rem;
+  text-align: center;
+  text-transform:uppercase;
 }
 
 .section__line-1 {
@@ -154,7 +157,9 @@ body{
   font-weight:400;
   color: $primaryColor;
   margin-top: 1.5rem;
-  margin-left:1rem;
+  text-align:left;
+  text-transform: uppercase;
+  text-indent: 1rem;
 }
 
 .section__line-2 {
@@ -164,11 +169,24 @@ body{
   margin-right: 1rem;
 }
 
+.about-container {
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+}
+
+.about__image {
+  height:20vh;
+  width:18vh;
+  padding:0.5rem;
+  grid-area: 1/1/2/2;
+}
 .about__text {
   font-family: $base-font;
   font-weight: 200;
   color: $textColor;
   padding: 1rem;
+  grid-area: 1/2/6/6;
+  
 }
 
 .contact__header {
@@ -176,7 +194,9 @@ body{
   font-weight:400;
   color: $accentColor2;
   margin-top: 1.5rem;
-  margin-left: 1rem;
+  text-align:right;
+  text-transform: uppercase;
+  margin-right: 1rem;
 }
 
 .section__line-3 {

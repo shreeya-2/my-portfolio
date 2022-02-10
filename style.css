@@ -108,17 +108,17 @@ body {
 .hero__btn {
   background-color: #81D8F7;
   color: #4185C5;
-  border-radius: 14px;
+  border-radius: 30px;
   border-style: hidden;
-  width: 120px;
-  height: 30px;
+  width: 148px;
+  height: 36px;
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   float: right;
 }
 .hero__btn:hover {
   background-color: #D7F9FF;
-  font-weight: 400;
+  font-weight: 550;
 }
 
 .projects__header {

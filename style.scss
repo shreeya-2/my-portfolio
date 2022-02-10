@@ -309,11 +309,13 @@ body{
 .about__image {
   height:20vh;
   width:18vh;
-  padding:0.5rem;
+  padding:0.3rem;
   grid-area: 1/1/2/2;
   border-radius: 12px;
   align-self:center;
   justify-self: center;
+  margin-top: 0.3rem;
+
 }
 
 .about__text {

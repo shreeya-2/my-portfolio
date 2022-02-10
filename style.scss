@@ -102,7 +102,7 @@ body{
   font-weight:400;
   color: $textColor;
   margin-left: 0.4rem;
-  
+  font-size: 3vh;
 }
 
 .project-container {
@@ -256,6 +256,7 @@ body{
   margin-top: 3rem;
   text-align: center;
   text-transform:uppercase;
+  font-size: 3vh;
 }
 
 .section__line-1 {
@@ -273,7 +274,7 @@ body{
   "five six seven eight";
   grid-gap: 12px;
   justify-self:center;
-  margin-top: 1rem;
+  margin-top: 1.3rem;
 
 .one, .two, .three, .four, .five, .six, .seven, .eight {
   height:40px;
@@ -290,10 +291,11 @@ body{
   font-family: $base-font;
   font-weight:400;
   color: $primaryColor;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   text-align:left;
   text-transform: uppercase;
   text-indent: 1rem;
+  font-size: 3vh;
 }
 
 .section__line-2 {
@@ -317,7 +319,6 @@ body{
   align-self:center;
   justify-self: center;
   margin-top: 0.3rem;
-
 }
 
 .about__text {
@@ -333,10 +334,11 @@ body{
   font-family: $base-font;
   font-weight:400;
   color: $accentColor2;
-  margin-top: 2rem;
+  margin-top: 2.25rem;
   text-align:right;
   text-transform: uppercase;
   margin-right: 1rem;
+  font-size: 3vh;
 }
 
 .section__line-3 {

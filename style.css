@@ -126,6 +126,7 @@ body {
   font-weight: 400;
   color: white;
   margin-left: 0.4rem;
+  font-size: 3vh;
 }
 
 .project-container {
@@ -262,6 +263,7 @@ body {
   margin-top: 3rem;
   text-align: center;
   text-transform: uppercase;
+  font-size: 3vh;
 }
 
 .section__line-1 {
@@ -277,7 +279,7 @@ body {
   grid-template-areas: "one two three four" "five six seven eight";
   grid-gap: 12px;
   justify-self: center;
-  margin-top: 1rem;
+  margin-top: 1.3rem;
 }
 .grid-stack .one, .grid-stack .two, .grid-stack .three, .grid-stack .four, .grid-stack .five, .grid-stack .six, .grid-stack .seven, .grid-stack .eight {
   height: 40px;
@@ -292,10 +294,11 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #81D8F7;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   text-align: left;
   text-transform: uppercase;
   text-indent: 1rem;
+  font-size: 3vh;
 }
 
 .section__line-2 {
@@ -334,10 +337,11 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #9C92E7;
-  margin-top: 2rem;
+  margin-top: 2.25rem;
   text-align: right;
   text-transform: uppercase;
   margin-right: 1rem;
+  font-size: 3vh;
 }
 
 .section__line-3 {

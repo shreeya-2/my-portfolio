@@ -121,6 +121,12 @@ body{
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(5,1fr);
 
+  &--2 {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+  }
+
   .card__image {
     justify-self:start;
     height:100%;
@@ -129,6 +135,11 @@ body{
     grid-row: 1/6;
     padding: 0.8em;
     border-radius: 16px;
+
+    &--2 {
+      grid-column: 2/3;
+      grid-row: 1/6;
+    }
   }
 
   .project__line {
@@ -142,6 +153,14 @@ body{
     grid-column: 2;
     grid-row: 1/2;
     align-self: end;
+
+    &--2 {
+      color: $accentColor;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      justify-self: start;
+      margin-left: 0.8rem;
+    }
   }
 
   .project__title {
@@ -155,6 +174,12 @@ body{
     grid-row: 2/4;
     align-items: start;
     margin-right: 0.8rem;
+
+    &--2 {
+      margin-left: 0.8rem;
+      grid-column: 1;
+      grid-row: 2/4;
+    }
   }
 
   .project__tags{
@@ -167,6 +192,13 @@ body{
     grid-column: 2;
     grid-row: 4/5;
     align-self: center;
+
+    &--2 {
+      color: $accentColor;
+      grid-column: 1;
+      grid-row: 4/5;
+      margin-left: 0.8rem;
+    }
   }
 
   .project__button {
@@ -193,6 +225,24 @@ body{
       justify-self: right;
       margin-right: 0.8rem;
     }
+
+    &--12 { 
+      width: 112px;
+      grid-column: 1;
+      grid-row: 5/6;
+      justify-self:start;
+      align-self: start;
+      margin-left: 0.8rem;
+    }
+
+    &--22 {
+      width: 102px;
+      grid-column: 1;
+      grid-row: 5/6;
+      justify-self:right;
+      align-self: start;
+    }
+
   }
 }
 

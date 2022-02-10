@@ -144,6 +144,11 @@ body {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(5, 1fr);
 }
+.card--2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+}
 .card .card__image {
   justify-self: start;
   height: 100%;
@@ -152,6 +157,10 @@ body {
   grid-row: 1/6;
   padding: 0.8em;
   border-radius: 16px;
+}
+.card .card__image--2 {
+  grid-column: 2/3;
+  grid-row: 1/6;
 }
 .card .project__line {
   font-family: "Poppins", sans-serif;
@@ -165,6 +174,13 @@ body {
   grid-row: 1/2;
   align-self: end;
 }
+.card .project__line--2 {
+  color: #B79FE2;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: start;
+  margin-left: 0.8rem;
+}
 .card .project__title {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -177,6 +193,11 @@ body {
   align-items: start;
   margin-right: 0.8rem;
 }
+.card .project__title--2 {
+  margin-left: 0.8rem;
+  grid-column: 1;
+  grid-row: 2/4;
+}
 .card .project__tags {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
@@ -187,6 +208,12 @@ body {
   grid-column: 2;
   grid-row: 4/5;
   align-self: center;
+}
+.card .project__tags--2 {
+  color: #B79FE2;
+  grid-column: 1;
+  grid-row: 4/5;
+  margin-left: 0.8rem;
 }
 .card .project__button {
   background-color: white;
@@ -210,6 +237,21 @@ body {
   width: 102px;
   justify-self: right;
   margin-right: 0.8rem;
+}
+.card .project__button--12 {
+  width: 112px;
+  grid-column: 1;
+  grid-row: 5/6;
+  justify-self: start;
+  align-self: start;
+  margin-left: 0.8rem;
+}
+.card .project__button--22 {
+  width: 102px;
+  grid-column: 1;
+  grid-row: 5/6;
+  justify-self: right;
+  align-self: start;
 }
 
 .stack__header {

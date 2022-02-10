@@ -59,8 +59,22 @@ body {
 .hero__phone-menu {
   height: 30px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 500px) {
   .hero__phone-menu {
+    display: none;
+  }
+}
+
+.hero__desktop-menu {
+  flex-direction: row;
+  word-spacing: 0.8em;
+  font-family: "Poppins", sans-serif;
+  color: #81D8F7;
+  font-weight: 400;
+  font-size: large;
+}
+@media screen and (max-width: 500px) {
+  .hero__desktop-menu {
     display: none;
   }
 }
@@ -114,6 +128,7 @@ body {
   height: 36px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  font-size: medium;
   float: right;
 }
 .hero__btn:hover {
@@ -193,7 +208,6 @@ body {
   grid-row: 2/4;
   align-self: center;
   margin-right: 0.8rem;
-  line-height: 3.8vh;
 }
 .card .project__title--2 {
   margin-left: 0.8rem;

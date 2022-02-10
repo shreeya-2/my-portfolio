@@ -169,10 +169,10 @@ body {
   text-transform: uppercase;
   text-align: left;
   text-decoration: underline;
-  font-size: large;
+  font-size: larger;
   grid-column: 2;
   grid-row: 1/2;
-  align-self: end;
+  align-self: center;
 }
 .card .project__line--2 {
   color: #B79FE2;
@@ -187,11 +187,12 @@ body {
   color: white;
   text-transform: uppercase;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   grid-column: 2;
   grid-row: 2/4;
-  align-items: start;
+  align-self: center;
   margin-right: 0.8rem;
+  line-height: 3.8vh;
 }
 .card .project__title--2 {
   margin-left: 0.8rem;
@@ -203,7 +204,7 @@ body {
   font-weight: 200;
   color: #81D8F7;
   text-align: left;
-  font-size: small;
+  font-size: medium;
   word-spacing: 1em;
   grid-column: 2;
   grid-row: 4/5;

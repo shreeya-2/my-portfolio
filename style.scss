@@ -111,6 +111,7 @@ body{
   gap: 1.2rem;
 }
 
+
 .card {
   height:240px;
   width: 400px;
@@ -119,72 +120,82 @@ body{
   display:grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(5,1fr);
-}
 
-.card__image {
-  justify-self:start;
-  height:100%;
-  width:10rem;
-  grid-column: 1;
-  grid-row: 1/6;
-  padding: 0.6rem;
-  border-radius: 12px;
-  margin-right: 0.4rem;
-}
+  .card__image {
+    justify-self:start;
+    height:100%;
+    width:10rem;
+    grid-column: 1;
+    grid-row: 1/6;
+    padding: 0.8em;
+    border-radius: 16px;
+  }
 
-.project__line {
-  font-family: $base-font;
-  font-weight: 300;
-  color: $primaryColor;
-  text-transform:uppercase;
-  text-align: left;
-  text-decoration: underline;
-  font-size: large;
-  grid-column: 2;
-  grid-row: 1/2;
-  align-self: center;
-}
+  .project__line {
+    font-family: $base-font;
+    font-weight: 300;
+    color: $primaryColor;
+    text-transform:uppercase;
+    text-align: left;
+    text-decoration: underline;
+    font-size: large;
+    grid-column: 2;
+    grid-row: 1/2;
+    align-self: end;
+  }
 
-.project__title {
-  font-family: $base-font;
-  font-weight: 500;
-  color: $textColor;
-  text-transform:uppercase;
-  text-align: left;
-  font-size: 1.5rem;
-  grid-column: 2;
-  grid-row: 2/4;
-  align-items: start;
-}
+  .project__title {
+    font-family: $base-font;
+    font-weight: 500;
+    color: $textColor;
+    text-transform:uppercase;
+    text-align: left;
+    font-size: 1.5rem;
+    grid-column: 2;
+    grid-row: 2/4;
+    align-items: start;
+    margin-right: 0.8rem;
+  }
 
-.project__tags{
-  font-family: $base-font;
-  font-weight: 200;
-  color: $primaryColor;
-  text-align: left;
-  font-size: medium;
-  grid-column: 2;
-  grid-row: 4/5;
-  align-self: end;
-}
+  .project__tags{
+    font-family: $base-font;
+    font-weight: 200;
+    color: $primaryColor;
+    text-align: left;
+    font-size: medium;
+    word-spacing:1em;
+    grid-column: 2;
+    grid-row: 4/5;
+    align-self: center;
+  }
 
-.project__button {
-  background-color: $textColor;
-  color: $cardColor;
-  border-radius: 14px;
-  border-style: hidden;
-  width: 116px;
-  height: 26px;
-  font-family: $base-font;
-  font-weight: 300;
-  grid-column: 2;
-  grid-row: 5/6;
-  align-self: center;
+  .project__button {
+    background-color: $textColor;
+    color: $cardColor;
+    border-radius: 14px;
+    border-style: hidden;
+    height: 26px;
+    font-family: $base-font;
+    font-weight: 300;
+    font-size: 0.75rem;
+    grid-column: 2;
+    grid-row: 5/6;
+    align-self: start;
+  
+    &--1 {
+      width: 112px;
+      justify-self:start;
+      margin-right: 0.6rem;
+    }
 
-  .project__button__1 {
-    justify-self: right;
+    &--2 {
+      width: 102px;
+      justify-self: right;
+      margin-right: 0.8rem;
+    }
   }
 }
+
 
 .stack__header {
   font-family: $base-font;

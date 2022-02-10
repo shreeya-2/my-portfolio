@@ -125,6 +125,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: white;
+  margin-left: 1rem;
 }
 
 .project-container {
@@ -135,8 +136,8 @@ body {
 }
 
 .card {
-  height: 220px;
-  width: 330px;
+  height: 240px;
+  width: 400px;
   background-color: #3E3D45;
   border-radius: 6px;
   display: grid;
@@ -147,18 +148,72 @@ body {
 .card__image {
   justify-self: start;
   height: 100%;
-  width: 9rem;
+  width: 10rem;
   grid-column: 1;
   grid-row: 1/6;
   padding: 0.6rem;
   border-radius: 12px;
+  margin-right: 0.4rem;
+}
+
+.project__line {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #81D8F7;
+  text-transform: uppercase;
+  text-align: left;
+  text-decoration: underline;
+  font-size: large;
+  grid-column: 2;
+  grid-row: 1/2;
+  align-self: center;
+}
+
+.project__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1.5rem;
+  grid-column: 2;
+  grid-row: 2/4;
+  align-items: start;
+}
+
+.project__tags {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: #81D8F7;
+  text-align: left;
+  font-size: medium;
+  grid-column: 2;
+  grid-row: 4/5;
+  align-self: end;
+}
+
+.project__button {
+  background-color: white;
+  color: #3E3D45;
+  border-radius: 14px;
+  border-style: hidden;
+  width: 116px;
+  height: 26px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  grid-column: 2;
+  grid-row: 5/6;
+  align-self: center;
+}
+.project__button .project__button__1 {
+  justify-self: right;
 }
 
 .stack__header {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #9C92E7;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -191,7 +246,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #81D8F7;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   text-align: left;
   text-transform: uppercase;
   text-indent: 1rem;
@@ -232,7 +287,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #9C92E7;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   text-align: right;
   text-transform: uppercase;
   margin-right: 1rem;
@@ -279,6 +334,7 @@ body {
   grid-column: 2;
   grid-row: 2;
   align-self: center;
+  justify-self: center;
 }
 
 .contact__icon3 {

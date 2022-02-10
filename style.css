@@ -203,7 +203,7 @@ body {
   font-weight: 200;
   color: #81D8F7;
   text-align: left;
-  font-size: medium;
+  font-size: small;
   word-spacing: 1em;
   grid-column: 2;
   grid-row: 4/5;
@@ -223,23 +223,23 @@ body {
   height: 26px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 0.75rem;
+  font-size: 0.68em;
   grid-column: 2;
   grid-row: 5/6;
   align-self: start;
 }
 .card .project__button--1 {
-  width: 112px;
+  width: 102px;
   justify-self: start;
   margin-right: 0.6rem;
 }
 .card .project__button--2 {
-  width: 102px;
+  width: 92px;
   justify-self: right;
   margin-right: 0.8rem;
 }
 .card .project__button--12 {
-  width: 112px;
+  width: 102px;
   grid-column: 1;
   grid-row: 5/6;
   justify-self: start;
@@ -247,7 +247,7 @@ body {
   margin-left: 0.8rem;
 }
 .card .project__button--22 {
-  width: 102px;
+  width: 92px;
   grid-column: 1;
   grid-row: 5/6;
   justify-self: right;

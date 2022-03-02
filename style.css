@@ -43,7 +43,6 @@ body {
   left: 0;
   width: 100%;
   height: 8vh;
-  overflow: scroll;
   background-image: linear-gradient(to right, #7474BF, #348AC7);
   display: flex;
   justify-content: space-between;
@@ -53,7 +52,7 @@ body {
 }
 
 .hero__logo {
-  height: 25px;
+  height: 3vh;
 }
 
 .hero__phone-menu {
@@ -103,6 +102,24 @@ body {
   font-size: 2rem;
 }
 
+@media screen and (min-width: 500px) {
+  .hero__header {
+    font-size: 5vw;
+  }
+
+  .hero__name {
+    font-size: 5vw;
+  }
+
+  .annotation {
+    font-size: x-large;
+  }
+
+  .hero__btn {
+    width: 4vw;
+    font-size: x-large;
+  }
+}
 .annotation {
   font-family: "La Belle Aurore", cursive;
   font-size: medium;
@@ -136,6 +153,10 @@ body {
   font-weight: 550;
 }
 
+.portfolio__container {
+  margin: 2rem;
+}
+
 .projects__header {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -149,6 +170,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.4rem;
+  min-width: 410px;
 }
 
 .card {
@@ -291,13 +313,12 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "one two three four" "five six seven eight";
-  grid-gap: 12px;
+  grid-gap: 2vw;
   justify-self: center;
   margin-top: 1.3rem;
 }
 .grid-stack .one, .grid-stack .two, .grid-stack .three, .grid-stack .four, .grid-stack .five, .grid-stack .six, .grid-stack .seven, .grid-stack .eight {
-  height: 40px;
-  width: 40px;
+  width: 6vw;
   justify-self: center;
 }
 .grid-stack .three {
@@ -320,11 +341,13 @@ body {
   border-style: solid;
   margin-left: 1rem;
   margin-right: 1rem;
+  min-width: 410px;
 }
 
 .about-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  min-width: 410px;
 }
 
 .about__image {

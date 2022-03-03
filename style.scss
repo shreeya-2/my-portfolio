@@ -9,8 +9,8 @@ body{
 
 .container {
   @include center-element(92%);
-  margin-left: 1.2rem;
-  margin-right: -1.2rem;
+  margin-left: 1.5rem;
+  margin-right: -1.5rem;
 }
 
 .hero__nav {
@@ -18,17 +18,17 @@ body{
   top: 0;
   left:0;
   width:100%;
-  height:8vh;
+  height:6vh;
   background-image: linear-gradient(to right, #7474BF, #348AC7);
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:1.2rem;
+  padding:1.5rem;
   z-index: 1;
 }
 
 .hero__logo {
-  height: 3vh;
+  height: 2rem;
 }
 
 .hero__phone-menu {
@@ -38,13 +38,14 @@ body{
 }
 }
 
+
 .hero__desktop-menu {
     flex-direction: row;
     word-spacing: 0.8em;
     font-family: $base-font;
     color: $primaryColor;
     font-weight: 400;
-    font-size:large;
+    font-size:1.2rem;
   @media screen and (max-width:500px){
     display:none;
   }
@@ -55,8 +56,8 @@ body{
   flex-direction: column;
   justify-content: space-evenly;
   width:100%;
-  min-width:max-content;
   height: 820px;
+  position: static;
   background-image: linear-gradient(to right, #7474BF, #348AC7);
 }
 
@@ -72,25 +73,6 @@ body{
   font-family: $base-font;
   font-weight:300;
   font-size:2rem;
-}
-
-@media screen and (min-width:500px) {
-  .hero__header {
-    font-size:5vw;
-  }
-
-  .hero__name {
-    font-size: 5vw;
-  }
-
-  .annotation {
-    font-size: x-large;
-  }
-
-  .hero__btn {
-    width: 4vw;
-    font-size: x-large;
-  }  
 }
 
 .annotation {
@@ -127,6 +109,47 @@ body{
   }
 }
 
+@media screen and (min-width:500px) {
+  .hero__header {
+    font-size:2.5rem;
+  }
+
+  .hero__name {
+    font-size: 2.5rem;
+  }
+
+  .annotation {
+    font-size: large;
+  }
+
+  .hero__btn {
+    width: 150px;
+    height: 38px;
+    font-size: medium;
+  }  
+}
+
+@media screen and (min-width:1024px) {
+  .hero__header {
+    font-size:3.2rem;
+  }
+
+  .hero__name {
+    font-size: 3.2rem;
+  }
+
+  .annotation {
+    font-size: x-large;
+  }
+
+  .hero__btn {
+    width: 164px;
+    height: 48px;
+    font-size: large;
+  }  
+}
+
+
 .portfolio__container {
   margin: 2rem;
 }
@@ -143,8 +166,11 @@ body{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap: 1.4rem;
+  gap: 1.5rem;
   min-width: 410px;
+  @media screen and (min-width:1024px) {
+    gap: 2.5rem;
+  }  
 }
 
 
@@ -249,21 +275,28 @@ body{
     grid-column: 2;
     grid-row: 5/6;
     align-self: start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
   
     &--1 {
-      width: 102px;
+      padding:0.8rem;
       justify-self:start;
       margin-right: 0.6rem;
     }
 
     &--2 {
-      width: 92px;
+      padding:0.8rem;
       justify-self: right;
       margin-right: 0.8rem;
     }
 
     &--12 { 
-      width: 102px;
+      padding:0.8rem;
+      width: 110px;
       grid-column: 1;
       grid-row: 5/6;
       justify-self:start;
@@ -272,7 +305,8 @@ body{
     }
 
     &--22 {
-      width: 92px;
+      padding:0.8rem;
+      width: 110px;
       grid-column: 1;
       grid-row: 5/6;
       justify-self:right;
@@ -291,6 +325,7 @@ body{
   text-align: center;
   text-transform:uppercase;
   font-size: 3vh;
+  position:static;
 }
 
 .section__line-1 {
@@ -298,6 +333,8 @@ body{
   border-style:solid;
   margin-left: 1rem;
   margin-right: 1rem;
+  min-width: 380px;
+
 }
 
 .grid-stack {
@@ -306,12 +343,13 @@ body{
   grid-template-areas: 
   "one two three four"
   "five six seven eight";
-  grid-gap: 2vw;
+  grid-gap: 1.2rem;
   justify-self:center;
   margin-top: 1.3rem;
+  min-width: 410px;
 
 .one, .two, .three, .four, .five, .six, .seven, .eight {
-  width:6vw;
+  height:2.5rem;
   justify-self:center;
 }
 
@@ -319,6 +357,21 @@ body{
   border-radius: 6px;
 }
 }
+
+@media screen and (min-width:1024px) {
+  .grid-stack {
+    gap: 1rem;
+    align-self: start;
+  }
+  
+  .one, .two, .five, .six {
+    align-content: end;
+  } 
+
+  .three, .four, .seven, .eight {
+    align-self: start;
+  }
+} 
 
 .about__header {
   font-family: $base-font;
@@ -336,7 +389,7 @@ body{
   border-style:solid;
   margin-left: 1rem;
   margin-right: 1rem;
-  min-width: 410px;
+  min-width: 380px;
 }
 
 .about-container {
@@ -381,6 +434,7 @@ body{
   border-style:solid;
   margin-left: 1rem;
   margin-right: 1rem;
+  min-width: 380px;
 }
 
 .contact-container {
@@ -390,6 +444,7 @@ body{
   grid-gap:0.2rem;
   margin-right:1rem;
   margin-top: 0.5rem;
+  min-width: 410px;
 }
 
 .contact__text {

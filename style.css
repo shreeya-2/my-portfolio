@@ -42,7 +42,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 8vh;
+  height: 4.5rem;
   background-image: linear-gradient(to right, #7474bf, #348ac7);
   display: flex;
   justify-content: space-between;
@@ -171,6 +171,8 @@ body {
     width: 164px;
     height: 48px;
     font-size: large;
+    float: left;
+    color: #7474bf;
   }
 }
 .portfolio__container {
@@ -286,7 +288,7 @@ body {
   height: 26px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 0.68em;
+  font-size: 0.8rem;
   grid-column: 2;
   grid-row: 5/6;
   align-self: start;
@@ -300,11 +302,19 @@ body {
   padding: 0.8rem;
   justify-self: start;
   margin-right: 0.6rem;
+  width: 110px;
+}
+.card .project__button--1:hover {
+  background-color: #81D8F7;
 }
 .card .project__button--2 {
   padding: 0.8rem;
   justify-self: right;
   margin-right: 0.8rem;
+  width: 110px;
+}
+.card .project__button--2:hover {
+  background-color: #81D8F7;
 }
 .card .project__button--12 {
   padding: 0.8rem;
@@ -315,6 +325,9 @@ body {
   align-self: start;
   margin-left: 0.8rem;
 }
+.card .project__button--12:hover {
+  background-color: #B79FE2;
+}
 .card .project__button--22 {
   padding: 0.8rem;
   width: 110px;
@@ -322,6 +335,9 @@ body {
   grid-row: 5/6;
   justify-self: right;
   align-self: start;
+}
+.card .project__button--22:hover {
+  background-color: #B79FE2;
 }
 
 .stack__header {
@@ -332,7 +348,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: 3vh;
-  position: static;
 }
 
 .section__line-1 {
@@ -363,31 +378,27 @@ body {
   height: 2.5rem;
   justify-self: center;
 }
+@media screen and (min-width: 1024px) {
+  .grid-stack .one,
+.grid-stack .two,
+.grid-stack .three,
+.grid-stack .four,
+.grid-stack .five,
+.grid-stack .six,
+.grid-stack .seven,
+.grid-stack .eight {
+    height: 4rem;
+  }
+}
 .grid-stack .three {
   border-radius: 6px;
 }
-
 @media screen and (min-width: 1024px) {
-  .grid-stack {
-    gap: 1rem;
-    align-self: start;
-    flex-grow: 2;
-  }
-
-  .one,
-.two,
-.five,
-.six {
-    align-content: end;
-  }
-
-  .three,
-.four,
-.seven,
-.eight {
-    align-self: start;
+  .grid-stack .three {
+    height: 4rem;
   }
 }
+
 .about__header {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -397,6 +408,7 @@ body {
   text-transform: uppercase;
   text-indent: 1rem;
   font-size: 3vh;
+  position: sticky;
 }
 
 .section__line-2 {
@@ -411,17 +423,20 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   min-width: 410px;
+  display: flex;
+  align-items: center;
 }
 
 .about__image {
-  height: 20vh;
-  width: 18vh;
-  padding: 0.3rem;
+  height: 15rem;
+  padding: 1rem;
   grid-area: 1/1/2/2;
-  border-radius: 12px;
-  align-self: center;
-  justify-self: center;
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
+}
+@media screen and (max-width: 500px) {
+  .about__image {
+    height: 12rem;
+  }
 }
 
 .about__text {
@@ -430,7 +445,12 @@ body {
   color: white;
   padding: 1rem;
   grid-area: 1/2/6/6;
-  align-self: center;
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .about__text {
+    font-size: large;
+  }
 }
 
 .contact__header {
@@ -453,47 +473,67 @@ body {
 }
 
 .contact-container {
-  display: grid;
-  grid-template-columns: auto, 2fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 0.2rem;
+  gap: 0.5rem;
   margin-right: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
   min-width: 410px;
+}
+@media screen and (max-width: 500px) {
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
 }
 
 .contact__text {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   color: white;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: right;
-  grid-column: 1;
-  grid-row: 1/4;
   justify-self: left;
-  align-self: center;
+}
+@media screen and (max-width: 500px) {
+  .contact__text {
+    padding-right: 5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact__text {
+    font-size: large;
+  }
+}
+
+.contact__links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0.7rem;
+}
+@media screen and (max-width: 500px) {
+  .contact__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-right: 1rem;
+    position: relative;
+    top: -110px;
+    gap: 0.3rem;
+  }
 }
 
 .contact__icon1 {
   height: 2.2rem;
-  grid-column: 2;
-  grid-row: 1;
-  align-self: end;
-  justify-self: center;
 }
 
 .contact__icon2 {
-  height: 2.5rem;
-  grid-column: 2;
-  grid-row: 2;
-  align-self: center;
-  justify-self: center;
+  height: 2.8rem;
 }
 
 .contact__icon3 {
   height: 2.3rem;
-  grid-column: 2;
-  grid-row: 3;
-  align-self: start;
-  justify-self: center;
 }
